@@ -220,7 +220,7 @@
                 <quarkus.package.type>native</quarkus.package.type>
                 <quarkus.native.additional-build-args>
                     -H:ReflectionConfigurationFiles=reflection-config.json,
-                    -O0
+                    -O0,-g
                 </quarkus.native.additional-build-args>
             </properties>
         </profile>
