@@ -1,6 +1,29 @@
 
 <h2>Run/debug the Quarkus application in native (no JVM) mode inside docker container</h2>
 
+1. Create a maven run configuration and run it on Docker target  to build our native application
+   - Run on target: Docker
+      - Image to pull: jetbrains/graalvm-debugger:21  or jetbrains/graalvm-debugger:17
+      - Optional:
+         - Run options: add `-p 8080:8080`
+   - "Run": `package`
+
+2. Create `GraalVM Native Image`"` run configuration to debug application
+   - Run on: select the same Docker target as for the maven run config
+   - Executable: `target/quarkus-graalvm-demo-1.0.0-SNAPSHOT-runner`
+   - Symbol file: `target/quarkus-graalvm-demo-1.0.0-SNAPSHOT-runner.debug`
+   - Use classpath for module: `quarkus-graalvm-demo`
+
+
+4. Press debug on this run configuration
+5. Set desired breakpoints e.g. in `com/demo/HelloResource.java`
+6. `curl http://localhost:8080/hello/add/minamoto/44`
+7. `http://localhost:8080/hello/users`
+
+
+
+//=====================================================================================================//
+OLD WAY, build 233.*
 
 1. Run maven target `package` to build native application
    profile: `native`
