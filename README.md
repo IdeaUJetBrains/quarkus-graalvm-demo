@@ -1,3 +1,4 @@
+Project:  https://github.com/IdeaUJetBrains/quarkus-graalvm-demo
 
 <h2>Run/debug the Quarkus application in native (no JVM) mode inside docker container</h2>
 
@@ -6,7 +7,7 @@
       - Image to pull: jetbrains/graalvm-debugger:21  or jetbrains/graalvm-debugger:17
       - Optional:
          - Run options: add `-p 8080:8080`
-   - "Run": `package`
+   - "Run": `package`  or `-P native package`
 
 2. Create `GraalVM Native Image`"` run configuration to debug application
    - Run on: select the same Docker target as for the maven run config

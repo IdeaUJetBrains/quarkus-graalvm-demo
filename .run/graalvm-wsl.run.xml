@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="graalvm-wsl" type="GraalVmRunConfiguration" factoryName="GraalVmBinary">
+    <run-attributes version="1" native-image="C:\Users\Olga.Pavlova\IdeaProjects\ALL_GRAALVM\quarkus-graalvm-demo\target\quarkus-graalvm-demo-1.0.0-SNAPSHOT-runner" symbol-info="C:\Users\Olga.Pavlova\IdeaProjects\ALL_GRAALVM\quarkus-graalvm-demo\target\quarkus-graalvm-demo-1.0.0-SNAPSHOT-native-image-source-jar\quarkus-graalvm-demo-1.0.0-SNAPSHOT-runner.debug" target-environment="WSL - Ubuntu">
+      <arguments />
+    </run-attributes>
+    <method v="2" />
+  </configuration>
+</component>
